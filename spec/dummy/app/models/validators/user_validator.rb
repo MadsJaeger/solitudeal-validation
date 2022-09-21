@@ -1,0 +1,2 @@
+class UserValidator < ApplicationValidator
+end
