@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "rails", ">= 7.0.4"
-  spec.add_development_dependency "rspec", '~> 6.0.0.rc1'
+  spec.add_development_dependency "rspec", '~> 3.11'
   spec.add_development_dependency "rspec-rails", '~> 6.0.0.rc1'
   spec.add_development_dependency "pry"
 end
