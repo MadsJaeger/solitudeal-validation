@@ -2,20 +2,16 @@ require 'rails_helper'
 
 RSpec.describe UserValidator do
   describe 'Class' do
-    it 'responds_to validates' do
-      expect(described_class).to respond_to :validates
+    let :subject do
+      described_class
     end
 
-    it 'responds_to validate' do
-      expect(described_class).to respond_to :validates
+    it '#superclass is ApplicationValidator' do
+      expect(subject.superclass).to be ApplicationValidator
     end
 
-    it 'responds_to validates_each' do
-      expect(described_class).to respond_to :validates
-    end
-
-    it 'superclass is ApplicationValidator' do
-      expect(described_class).to be ApplicationValidator
+    it '#model is User' do
+      expect(subject.model).to be User
     end
   end
 end
